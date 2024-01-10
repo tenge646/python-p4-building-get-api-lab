@@ -37,4 +37,4 @@ class BakedGood(db.Model, SerializerMixin):
     bakery_id = db.Column(db.Integer, db.ForeignKey('bakeries.id'))
 
     def __repr__(self):
-        return f'<Baked Good {self.name}, ${self.price}>'
+        return f'<Baked Good {self.name}, ${self.price}>' 
